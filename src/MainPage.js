@@ -19,7 +19,9 @@ class MainPage extends Component {
 										.map(book => (
 											<li key={book.id}>
 												<Book
-												book={book}
+													book={book}
+													changeBookShelf={this.props.changeBookShelf}
+													currentShelf="currentlyReading"
 												/>
 											</li>
 										))
@@ -36,7 +38,9 @@ class MainPage extends Component {
                                         .map(book => (
                                             <li key={book.id}>
 												<Book
-												book={book}
+													book={book}
+													changeBookShelf={this.props.changeBookShelf}
+													currentShelf="wantToRead"
 												/>
                                             </li>
                                         ))
@@ -53,7 +57,9 @@ class MainPage extends Component {
 									.map(book => (
 										<li key={book.id}>
 											<Book
-											book={book}
+												book={book}
+												changeBookShelf={this.props.changeBookShelf}
+												currentShelf="read"
 											/>
 										</li>
 									))
