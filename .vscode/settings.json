@@ -1,4 +1,6 @@
 {
     "eslint.enable": false,
-    "tslint.enable": false
+    "tslint.enable": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
 }
