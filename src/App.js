@@ -25,10 +25,14 @@ class BooksApp extends React.Component {
   render() {
     return (
       <div className="app">
+        { /*
         <MainPage
-          books={this.state.books}
-          changeBookShelf={this.changeBookShelf}
-        />
+           books={this.state.books}
+           changeBookShelf={this.changeBookShelf}
+          /> */
+        }
+
+        <SearchPage />
         </div>
     )
   }
