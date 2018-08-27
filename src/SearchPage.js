@@ -59,6 +59,7 @@ class SearchPage extends Component {
                                 <li key={searchedBooks.id}>
                                     <Book
                                         book={searchedBooks}
+                                        changeBookShelf={this.props.changeBookShelf}
                                     />
                                 </li>
                             ))
