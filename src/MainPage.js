@@ -72,7 +72,7 @@ class MainPage extends Component {
 				</div>
 				<div className="open-search">
 					<Link
-						to=" /search"
+						to="/search"
 						>Add a book</Link>
 				</div>
 			</div>
