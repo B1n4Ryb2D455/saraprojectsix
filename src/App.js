@@ -7,6 +7,8 @@ import MainPage from './MainPage';
 import * as BooksAPI from './BooksAPI';
 import './App.css'
 
+// help from Study Jam 21/07 - FEND P7 - My Reads https://www.youtube.com/watch?v=i6L2jLHV9j8
+
 class BooksApp extends React.Component {
   state = {
     books: []

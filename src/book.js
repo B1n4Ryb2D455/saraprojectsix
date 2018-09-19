@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// help from Study Jam 21/07 - FEND P7 - My Reads https://www.youtube.com/watch?v=i6L2jLHV9j8
+
 class Book extends Component {
 	render() {
 		let shownThumbnail = this.props.book.imageLinks ?
