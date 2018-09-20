@@ -5,7 +5,7 @@ import Book from './Book';
 // help from Study Jam 21/07 - FEND P7 - My Reads https://www.youtube.com/watch?v=i6L2jLHV9j8
 
 class MainPage extends Component {
-    render() {
+	render() {
 		return (
 			<div className="list-books">
 				<div className="list-books-title">
@@ -16,10 +16,10 @@ class MainPage extends Component {
 						<div className="bookshelf">
 							<h2 className="bookshelf-title">Currently Reading</h2>
 							<div className="bookshelf-books">
-                                <ol className="books-grid">
+								<ol className="books-grid">
 									{this.props.books
-										.filter(book => book.shelf === 'currentlyReading')
-										.map(book => (
+										.filter((book) => book.shelf === 'currentlyReading')
+										.map((book) => (
 											<li key={book.id}>
 												<Book
 													book={book}
@@ -27,37 +27,31 @@ class MainPage extends Component {
 													currentShelf="currentlyReading"
 												/>
 											</li>
-										))
-									}
+										))}
 								</ol>
 							</div>
 						</div>
 						<div className="bookshelf">
 							<h2 className="bookshelf-title">Want to Read</h2>
 							<div className="bookshelf-books">
-                                <ol className="books-grid">
-                                    {this.props.books
-                                        .filter(book => book.shelf === 'wantToRead')
-                                        .map(book => (
-                                            <li key={book.id}>
-												<Book
-													book={book}
-													changeBookShelf={this.props.changeBookShelf}
-													currentShelf="wantToRead"
-												/>
-                                            </li>
-                                        ))
-                                    }
+								<ol className="books-grid">
+									{this.props.books.filter((book) => book.shelf === 'wantToRead').map((book) => (
+										<li key={book.id}>
+											<Book
+												book={book}
+												changeBookShelf={this.props.changeBookShelf}
+												currentShelf="wantToRead"
+											/>
+										</li>
+									))}
 								</ol>
 							</div>
 						</div>
 						<div className="bookshelf">
 							<h2 className="bookshelf-title">Read</h2>
 							<div className="bookshelf-books">
-                                <ol className="books-grid">
-								    {this.props.books
-									.filter(book => book.shelf === 'read')
-									.map(book => (
+								<ol className="books-grid">
+									{this.props.books.filter((book) => book.shelf === 'read').map((book) => (
 										<li key={book.id}>
 											<Book
 												book={book}
@@ -65,17 +59,14 @@ class MainPage extends Component {
 												currentShelf="read"
 											/>
 										</li>
-									))
-								}
+									))}
 								</ol>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className="open-search">
-					<Link
-						to="/search"
-						>Add a book</Link>
+					<Link to="/search">Add a book</Link>
 				</div>
 			</div>
 		);
