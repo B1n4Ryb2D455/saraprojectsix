@@ -2,8 +2,9 @@
 
 ## Ways to Interact or Develop:
 1. Fork the repository
-2. Clone the repository to your machine *you will need a code editor*
-3. Download the ZIP file *you must spin up a server from the command line to interact with this app*
+2. Clone the repository to your machine
+3. Download the ZIP file
+*you will need a code editor - you must spin up a server from the command line to interact with this app*
 
 ## Description
 An app similar to Goodreads used to track books a person is reading, wants to read, or has read. There is search function capability as well as the ability to move the books between shelves with a few clicks. This project was project six in the Google Udacity Front End Web developer nanodegree.
@@ -21,17 +22,17 @@ The project contained static starter code that must be converted to an interacti
 - main page contains link to search page, which is shown when the link is clicked
 
 ## How the App was Built:
-- The app was built React, CSS, HTML, Node.js, Visual Studio Code, Chrome's built-in dev tools, and used Git Bash to push changes to Github
+- The app was built with React, CSS, HTML, Node.js, Visual Studio Code, Chrome's built-in dev tools, and Git Bash (to push changes to Github)
 
 - cloned project code to my local machine using Gitbash
-- pushed the code up to my Github profile as Master
+- pushed the code up to my Github profile
 - ran 'npm install' and 'npm start' to spin up a local server
 - created MainPage, SearchPage, and Books js files for individual components
 - installed React router (using Node.js, then implementing in the app)
 
 ## Instructions for Interacting:
-- search for a book using the search button in the bottom right hand corner of the application
-- move books between shelves using the buttons to the bottom of each book, which will open a small drop-down menu
+- search for a book using the search button in the bottom right corner of the application
+- move books between shelves using the buttons to the bottom of each book (which will open a small drop-down menu)
 - you can navigate back to the main page using the back button in the search bar
 
 
