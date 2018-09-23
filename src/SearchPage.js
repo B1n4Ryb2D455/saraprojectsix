@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Book from './Book';
+import Book from './Book'; // Hi, I'm not seeing the error - my js file is with an upper case B. Please assist. Thank you!
 import * as BooksAPI from './BooksAPI';
 
 // help from Study Jam 21/07 - FEND P7 - My Reads https://www.youtube.com/watch?v=i6L2jLHV9j8
